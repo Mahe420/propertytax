@@ -1,0 +1,138 @@
+body {
+    height: 100vh;
+    background-color: rgb(245,245,220);
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 18% auto;
+    grid-template-areas:
+        "header"
+        "main";
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    grid-area: header;
+}
+
+.button-nav {
+    width: calc(calc(100vw - 1000px) /2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    place-self: center;
+    grid-area: main;
+    margin: 0px;
+}
+
+
+h1 {
+    text-align: center;
+    display: inline;
+    color: #7c795d;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0;
+}
+
+
+
+.content-table {
+    border-collapse: collapse;
+    font-size: 1.1em;
+    min-width: 1000px;
+    min-height: 425px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom:40px;
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+button {
+    padding: 8.5px 20px;
+    max-width: 0;
+    text-decoration: none;
+    transition: max-width 0.5s;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    border-radius: 25px;
+    background-color: white;
+}
+
+button:hover {
+    max-width: 7rem;
+}
+button:focus {
+	outline:0;}
+
+.arrow {
+    border: solid black;
+    border-width: 0 2.5px 2.5px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 2.5px;
+    margin-right: 10px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}   
+
+.button-text{
+	font-size:17.5px;
+    font-weight: bold;
+    margin-left:1px;
+}
+
+.sideline{
+	border-left: 1px solid #dddddd;
+}
